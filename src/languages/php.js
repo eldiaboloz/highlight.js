@@ -7,7 +7,8 @@ Category: common
 
 function(hljs) {
   var VARIABLE = {
-    begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*'
+    begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*',
+    className: 'variable'
   };
   var PREPROCESSOR = {
     className: 'meta', begin: /<\?(php)?|\?>/
